@@ -24,6 +24,11 @@
             "src":"/icons/camera-48.png",
             "type":"image/png",
             "sizes":"48x48"
+        },
+        {
+            "src":"/icons/camera-152.png",
+            "type":"image/png",
+            "sizes":"152x152"
         }
     ],
     "theme_color": "#808080"
