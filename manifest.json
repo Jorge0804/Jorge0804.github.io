@@ -6,22 +6,22 @@
     "display":"standalone",
     "orientation": "portrait",
     "icons":[{
-            "src":"icons/camera-16.png",
+            "src":"/icons/camera-16.png",
             "type":"image/png",
             "sizes":"16x16"
         },
         {
-            "src":"icons/camera-24.png",
+            "src":"/icons/camera-24.png",
             "type":"image/png",
             "sizes":"24x24"
         },
         {
-            "src":"icons/camera-32.png",
+            "src":"/icons/camera-32.png",
             "type":"image/png",
             "sizes":"32x32"
         },
         {
-            "src":"icons/camera-48.png",
+            "src":"/icons/camera-48.png",
             "type":"image/png",
             "sizes":"48x48"
         }
