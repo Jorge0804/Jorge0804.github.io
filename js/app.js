@@ -3,7 +3,7 @@ var pwaLocation = 'https://jorge0804.github.io/sw.js'; //path donde se encuentra
  
 if(navigator.serviceWorker){
     if(url.includes('localhost')){
-        pwaLocation = 'sw.js';
+        pwaLocation = '/sw.js';
     }
     navigator.serviceWorker.register(pwaLocation);
 }
