@@ -1,10 +1,10 @@
 {
-    "short_name":"pwa",
-    "name":"Proyecto PWA",
+    "short_name":"PWA",
+    "name":"Jorge Bernal",
     "start_url":"index.html",
-    "background_color":"#ededed",
+    "background_color":"#808080",
     "display":"standalone",
-    "orientation":"portrait",
+    "orientation": "portrait",
     "icons":[{
             "src":"icons/camera-16.png",
             "type":"image/png",
@@ -25,5 +25,6 @@
             "type":"image/png",
             "sizes":"48x48"
         }
-    ]
+    ],
+    "theme_color": "#808080"
 }
