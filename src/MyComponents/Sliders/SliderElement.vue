@@ -8,7 +8,7 @@
   }
    
   .item {
-    min-width: 400px;
+    min-width: 50%;
     flex-grow: 1;
     text-align: center;
     font-size: 50px;
@@ -26,7 +26,12 @@
 
   }
 
-  @media screen and (min-width: 0px) and (max-width: 800px) {
+  .flex-right{
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 0px) and (max-width: 900px) {
     .item{
         height: 49vh;
     }
@@ -38,7 +43,7 @@
         <div class="flex">
             <div class="item flex-left">
                 <div class="item-left">
-                    1
+                   <img style="width: 10vh;" src="../../assets/logo.png"/>
                 </div>
                 <div class="item-left">
                     1
@@ -47,18 +52,40 @@
                     1
                 </div>
             </div>
-            <div class="item" style="background-color: blue;">2</div>
+            <div class="item flex-right" style="background-color: blue;">
+                <div class="item-left" style="flex-grow: 1; background-color: green;">
+                    1
+                </div>
+                <div class="item-left" style="flex-grow: 4; background-color: purple;">
+                    1
+                </div>
+                <div class="item-left" style="flex-grow: 2; background-color: gray;">
+                    
+                </div>
+            </div>
         </div>
     </SplideSlide>
 </template>
 
 <script>
-import { SplideSlide } from '@splidejs/vue-splide';
+import { SplideSlide, Splide } from '@splidejs/vue-splide';
 
 export default{
     name: 'SliderElement',
     components:{
-        SplideSlide
+        SplideSlide,
+        Splide
+    },
+    setup(){
+        const options = {
+            type   : 'loop',
+            drag   : 'free',
+            snap   : true,
+            perPage: 4,
+            focus  : 'center',
+        }
+
+        return {options};
     }
 }
 </script>
