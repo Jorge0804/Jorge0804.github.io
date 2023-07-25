@@ -2,6 +2,8 @@
     <Splide :options="options" aria-label="My Favorite Images">
       <SliderElement/>
       <SliderElement/>
+      <SliderElement/>
+      <SliderElement/>
     </Splide>
   </template>
   
