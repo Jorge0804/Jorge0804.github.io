@@ -22,8 +22,23 @@
     justify-content: space-around;
   }
 
-  .item-left{
+  .item-custom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://s1.ppllstatics.com/leonoticias/www/multimedia/202107/06/media/MM-senderismo-asturias/oddle-1-ksRC--1350x900@El%20Comercio.jpg");
+  }
 
+  #prueba{
+    width: 50vh; 
+    height: 30vh;
+    background: rgba(79, 120, 255, 0.15);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .flex-right{
@@ -31,7 +46,7 @@
     flex-direction: column;
   }
 
-  @media screen and (min-width: 0px) and (max-width: 900px) {
+  @media screen and (min-width: 0px) and (max-width: 1100px) {
     .item{
         height: 49vh;
     }
@@ -56,8 +71,10 @@
                 <div class="item-left" style="flex-grow: 1; background-color: green;">
                     1
                 </div>
-                <div class="item-left" style="flex-grow: 4; background-color: purple;">
-                    1
+                <div class="item-left item-custom" style="flex-grow: 4; background-color: purple;" >
+                   <div id="prueba">
+                        Hola, texto de prueba, Jorge limites
+                   </div>
                 </div>
                 <div class="item-left" style="flex-grow: 2; background-color: gray;">
                     
